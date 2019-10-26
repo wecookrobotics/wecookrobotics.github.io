@@ -1,0 +1,6 @@
+<map id="wecook::PrimitiveActionNode" name="wecook::PrimitiveActionNode">
+<area shape="rect" id="node2" href="$classwecook_1_1PrimitiveActuateNode.html" title="wecook::PrimitiveActuateNode" alt="" coords="248,5,451,32"/>
+<area shape="rect" id="node3" href="$classwecook_1_1PrimitiveEngageNode.html" title="wecook::PrimitiveEngageNode" alt="" coords="249,56,450,83"/>
+<area shape="rect" id="node4" href="$classwecook_1_1PrimitiveGraspNode.html" title="wecook::PrimitiveGraspNode" alt="" coords="253,107,445,133"/>
+<area shape="rect" id="node5" href="$classwecook_1_1PrimitivePlaceNode.html" title="wecook::PrimitivePlaceNode" alt="" coords="254,157,445,184"/>
+</map>
