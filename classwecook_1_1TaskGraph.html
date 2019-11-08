@@ -70,15 +70,15 @@ $(function() {
 <div class="title">wecook::TaskGraph Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="TaskGraph_8h_source.html">TaskGraph.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3bedf66fc4e1657f89ec7485cd95df53"><td class="memItemLeft" align="right" valign="top"><a id="a3bedf66fc4e1657f89ec7485cd95df53"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraph</b> (const std::vector&lt; <a class="el" href="classwecook_1_1Action.html">Action</a> &gt; &amp;actionSeq)</td></tr>
+<tr class="memitem:a3bedf66fc4e1657f89ec7485cd95df53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwecook_1_1TaskGraph.html#a3bedf66fc4e1657f89ec7485cd95df53">TaskGraph</a> (const std::vector&lt; <a class="el" href="classwecook_1_1Action.html">Action</a> &gt; &amp;actionSeq)</td></tr>
 <tr class="separator:a3bedf66fc4e1657f89ec7485cd95df53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3d55f7d7fdb3a63a858c95f167260cf"><td class="memItemLeft" align="right" valign="top"><a id="aa3d55f7d7fdb3a63a858c95f167260cf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addNode</b> (const <a class="el" href="classwecook_1_1Action.html">Action</a> &amp;action, bool ifEnd=false)</td></tr>
-<tr class="separator:aa3d55f7d7fdb3a63a858c95f167260cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3287e925ae13521e9af5459288191d15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwecook_1_1TaskGraph.html#a3287e925ae13521e9af5459288191d15">addNode</a> (const <a class="el" href="classwecook_1_1Action.html">Action</a> &amp;action)</td></tr>
+<tr class="separator:a3287e925ae13521e9af5459288191d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa886af095483a58a8c6548304a7f03f9"><td class="memItemLeft" align="right" valign="top"><a id="aa886af095483a58a8c6548304a7f03f9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addArc</b> ()</td></tr>
 <tr class="separator:aa886af095483a58a8c6548304a7f03f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,9 +88,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>visualize</b> ()</td>
 <tr class="memitem:a84e198962fb7df887bf3fc29e7ccd4ce"><td class="memItemLeft" align="right" valign="top"><a id="a84e198962fb7df887bf3fc29e7ccd4ce"></a>
 std::vector&lt; <a class="el" href="classwecook_1_1ActionNode.html">ActionNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getNodes</b> ()</td></tr>
 <tr class="separator:a84e198962fb7df887bf3fc29e7ccd4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab582604f6642c9331b482f89e19868c9"><td class="memItemLeft" align="right" valign="top"><a id="ab582604f6642c9331b482f89e19868c9"></a>
-std::vector&lt; <a class="el" href="classwecook_1_1ActionNode.html">ActionNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getHeads</b> ()</td></tr>
-<tr class="separator:ab582604f6642c9331b482f89e19868c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f4635f6d0e8a7f7a9254c87d6946f9c"><td class="memItemLeft" align="right" valign="top"><a id="a2f4635f6d0e8a7f7a9254c87d6946f9c"></a>
 <a class="el" href="classwecook_1_1ActionNode.html">ActionNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getHeadNode</b> (const std::string &amp;pid)</td></tr>
 <tr class="separator:a2f4635f6d0e8a7f7a9254c87d6946f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,6 +95,61 @@ std::vector&lt; <a class="el" href="classwecook_1_1ActionNode.html">ActionNode</
 void&#160;</td><td class="memItemRight" valign="bottom"><b>merge</b> ()</td></tr>
 <tr class="separator:ac4a72a6f92eb40df8a08c6344fecbdfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classwecook_1_1TaskGraph.html">TaskGraph</a> is a class used to represent the task plan that the robot will execute </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3bedf66fc4e1657f89ec7485cd95df53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bedf66fc4e1657f89ec7485cd95df53">&#9670;&nbsp;</a></span>TaskGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wecook::TaskGraph::TaskGraph </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classwecook_1_1Action.html">Action</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>actionSeq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This construct function will load in sequence of actions and construct the task graph </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3287e925ae13521e9af5459288191d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3287e925ae13521e9af5459288191d15">&#9670;&nbsp;</a></span>addNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TaskGraph::addNode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwecook_1_1Action.html">Action</a> &amp;&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function does the job of adding node; For each new adding node, it will do following staff: 1) Find all father nodes of the new node; 2) If it has no father node, the new node is the head node, so we set it as the head node 3) If it has father node, we set the father nodes for this node </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">action</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/wecook/<a class="el" href="TaskGraph_8h_source.html">TaskGraph.h</a></li>
 <li>src/wecook/TaskGraph.cpp</li>

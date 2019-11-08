@@ -64,13 +64,32 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classwecook_1_1Task-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">wecook::Task Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Task_8h_source.html">Task.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwecook_1_1Task_1_1Agent.html">Agent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a86883857b13ff5839418b5e47e72c34b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwecook_1_1Task.html#a86883857b13ff5839418b5e47e72c34b">Type</a> { <b>Planning</b>, 
+<a class="el" href="classwecook_1_1Task.html#a86883857b13ff5839418b5e47e72c34ba75a7ab0748b3f65b333d06bccb8f0147">Following</a>
+ }</td></tr>
+<tr class="separator:a86883857b13ff5839418b5e47e72c34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d7f4c8eb067d28b290bf70bd29a8ec"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwecook_1_1Task.html#aa0d7f4c8eb067d28b290bf70bd29a8ec">MotionPlannerType</a> { <b>RRTConnect</b>
+ }</td></tr>
+<tr class="separator:aa0d7f4c8eb067d28b290bf70bd29a8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8322a50caef6b3c6b6f953c678b54bc6"><td class="memItemLeft" align="right" valign="top"><a id="a8322a50caef6b3c6b6f953c678b54bc6"></a>
@@ -82,6 +101,36 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addObject</b> (const 
 <tr class="memitem:a1aa56df4ff91538dea46cbdc78f1f4dc"><td class="memItemLeft" align="right" valign="top"><a id="a1aa56df4ff91538dea46cbdc78f1f4dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addContainingPair</b> (const std::string &amp;containerName, const std::string &amp;objectName)</td></tr>
 <tr class="separator:a1aa56df4ff91538dea46cbdc78f1f4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c3729575b4a9e8b6d11d0e8686cfa2"><td class="memItemLeft" align="right" valign="top"><a id="a88c3729575b4a9e8b6d11d0e8686cfa2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addPDDLDomain</b> (const std::string &amp;PDDLDomain)</td></tr>
+<tr class="separator:a88c3729575b4a9e8b6d11d0e8686cfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c562ba86bd0104b890a9a674bc30912"><td class="memItemLeft" align="right" valign="top"><a id="a8c562ba86bd0104b890a9a674bc30912"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSim</b> (const uint8_t &amp;ifSim)</td></tr>
+<tr class="separator:a8c562ba86bd0104b890a9a674bc30912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc5e450b43be4a3f9910b22dc73eb5a"><td class="memItemLeft" align="right" valign="top"><a id="afdc5e450b43be4a3f9910b22dc73eb5a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addPDDLProblem</b> (const std::string &amp;PDDLProblem)</td></tr>
+<tr class="separator:afdc5e450b43be4a3f9910b22dc73eb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac079cf56f8af5f435f738ad57671994c"><td class="memItemLeft" align="right" valign="top"><a id="ac079cf56f8af5f435f738ad57671994c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addTaskType</b> (const std::string &amp;taskType)</td></tr>
+<tr class="separator:ac079cf56f8af5f435f738ad57671994c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021a0fb684bc21caed3807bfc7d3b4a0"><td class="memItemLeft" align="right" valign="top"><a id="a021a0fb684bc21caed3807bfc7d3b4a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addAgent</b> (const std::string &amp;pid, const std::string &amp;agentType, const std::vector&lt; double &gt; &amp;pose)</td></tr>
+<tr class="separator:a021a0fb684bc21caed3807bfc7d3b4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b086cb0c1096ff98ffc8882f7199cd6"><td class="memItemLeft" align="right" valign="top"><a id="a7b086cb0c1096ff98ffc8882f7199cd6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addMotionPlannerType</b> (const std::string &amp;type)</td></tr>
+<tr class="separator:a7b086cb0c1096ff98ffc8882f7199cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad079986d6d06d695099bf14e7fd56f92"><td class="memItemLeft" align="right" valign="top"><a id="ad079986d6d06d695099bf14e7fd56f92"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ifSim</b> () const</td></tr>
+<tr class="separator:ad079986d6d06d695099bf14e7fd56f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad342b8a9b003ea35a2527fc46642053a"><td class="memItemLeft" align="right" valign="top"><a id="ad342b8a9b003ea35a2527fc46642053a"></a>
+<a class="el" href="classwecook_1_1Task.html#aa0d7f4c8eb067d28b290bf70bd29a8ec">MotionPlannerType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getMotionPlannerType</b> ()</td></tr>
+<tr class="separator:ad342b8a9b003ea35a2527fc46642053a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1e71ab698d1a557adeb0dc287aec01"><td class="memItemLeft" align="right" valign="top"><a id="a4f1e71ab698d1a557adeb0dc287aec01"></a>
+std::vector&lt; <a class="el" href="structwecook_1_1Task_1_1Agent.html">Agent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getAgents</b> () const</td></tr>
+<tr class="separator:a4f1e71ab698d1a557adeb0dc287aec01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2968328f15578d1a6e9e1ec9b17ca83e"><td class="memItemLeft" align="right" valign="top"><a id="a2968328f15578d1a6e9e1ec9b17ca83e"></a>
+<a class="el" href="classwecook_1_1Task.html#a86883857b13ff5839418b5e47e72c34b">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getTaskType</b> () const</td></tr>
+<tr class="separator:a2968328f15578d1a6e9e1ec9b17ca83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3b66317da1fd9987ac0b7ccf77960ad"><td class="memItemLeft" align="right" valign="top"><a id="af3b66317da1fd9987ac0b7ccf77960ad"></a>
 std::vector&lt; <a class="el" href="classwecook_1_1Action.html">Action</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSubgoals</b> () const</td></tr>
 <tr class="separator:af3b66317da1fd9987ac0b7ccf77960ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,7 +140,50 @@ std::vector&lt; <a class="el" href="classwecook_1_1Object.html">Object</a> &gt;&
 <tr class="memitem:a6fa7b190694dbffa683a4b04fd9d79a6"><td class="memItemLeft" align="right" valign="top"><a id="a6fa7b190694dbffa683a4b04fd9d79a6"></a>
 std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getContainingPairs</b> () const</td></tr>
 <tr class="separator:a6fa7b190694dbffa683a4b04fd9d79a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad411b724954de88eee92b69c78ee90e7"><td class="memItemLeft" align="right" valign="top"><a id="ad411b724954de88eee92b69c78ee90e7"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getPDDLDomain</b> () const</td></tr>
+<tr class="separator:ad411b724954de88eee92b69c78ee90e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3bb505afd28bea7cd924a71bd57c04"><td class="memItemLeft" align="right" valign="top"><a id="a4b3bb505afd28bea7cd924a71bd57c04"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getPDDLProblem</b> () const</td></tr>
+<tr class="separator:a4b3bb505afd28bea7cd924a71bd57c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classwecook_1_1Task.html">Task</a> is a general class for task description, it matches with the taskMsg. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aa0d7f4c8eb067d28b290bf70bd29a8ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0d7f4c8eb067d28b290bf70bd29a8ec">&#9670;&nbsp;</a></span>MotionPlannerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classwecook_1_1Task.html#aa0d7f4c8eb067d28b290bf70bd29a8ec">wecook::Task::MotionPlannerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>motionPlannerType is an enum </p>
+
+</div>
+</div>
+<a id="a86883857b13ff5839418b5e47e72c34b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86883857b13ff5839418b5e47e72c34b">&#9670;&nbsp;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classwecook_1_1Task.html#a86883857b13ff5839418b5e47e72c34b">wecook::Task::Type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type is an enum </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a86883857b13ff5839418b5e47e72c34ba75a7ab0748b3f65b333d06bccb8f0147"></a>Following&#160;</td><td class="fielddoc"><p>planning task, currently only supports single agent</p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>#9 </dd></dl>
+</td></tr>
+</table>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/wecook/<a class="el" href="Task_8h_source.html">Task.h</a></li>
 </ul>

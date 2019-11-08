@@ -73,10 +73,59 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4b72605281248d67aea7aa2783ecedfa"><td class="memItemLeft" align="right" valign="top"><a id="a4b72605281248d67aea7aa2783ecedfa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>compile</b> (std::shared_ptr&lt; <a class="el" href="classwecook_1_1TaskGraph.html">TaskGraph</a> &gt; &amp;taskGraph, std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwecook_1_1Agent.html">Agent</a> &gt;&gt; &amp;agents, std::shared_ptr&lt; <a class="el" href="classwecook_1_1ContainingMap.html">ContainingMap</a> &gt; &amp;containingMap, std::shared_ptr&lt; <a class="el" href="classwecook_1_1ObjectMgr.html">ObjectMgr</a> &gt; &amp;objectMgr)</td></tr>
+<tr class="memitem:a4b72605281248d67aea7aa2783ecedfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwecook_1_1ActionPlanner.html#a4b72605281248d67aea7aa2783ecedfa">compile</a> (std::shared_ptr&lt; <a class="el" href="classwecook_1_1TaskGraph.html">TaskGraph</a> &gt; &amp;taskGraph, std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwecook_1_1Agent.html">Agent</a> &gt;&gt; &amp;agents, std::shared_ptr&lt; <a class="el" href="classwecook_1_1ContainingMap.html">ContainingMap</a> &gt; &amp;containingMap, std::shared_ptr&lt; <a class="el" href="classwecook_1_1ObjectMgr.html">ObjectMgr</a> &gt; &amp;objectMgr)</td></tr>
 <tr class="separator:a4b72605281248d67aea7aa2783ecedfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4b72605281248d67aea7aa2783ecedfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b72605281248d67aea7aa2783ecedfa">&#9670;&nbsp;</a></span>compile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ActionPlanner::compile </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwecook_1_1TaskGraph.html">TaskGraph</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>taskGraph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwecook_1_1Agent.html">Agent</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>agents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwecook_1_1ContainingMap.html">ContainingMap</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>containingMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwecook_1_1ObjectMgr.html">ObjectMgr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objectMgr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function compile the high level task, e.g., cut tomate with knife to the mid-level motion, e.g., grab knife -&gt; engage the knife -&gt; do the cut motion -&gt; place the knife back </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">taskGraph</td><td></td></tr>
+    <tr><td class="paramname">agents</td><td></td></tr>
+    <tr><td class="paramname">containingMap</td><td></td></tr>
+    <tr><td class="paramname">objectMgr</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/wecook/<a class="el" href="ActionPlanner_8h_source.html">ActionPlanner.h</a></li>
 <li>src/wecook/ActionPlanner.cpp</li>

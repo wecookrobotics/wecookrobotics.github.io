@@ -67,7 +67,7 @@ $(function() {
 <p><b>Open a terminal and type in following commands</b> </p><div class="fragment"><div class="line"># Store your favorite ros workspace path in a env variable ROS_WORKSPACE</div><div class="line"># Feel free to replace ~/ros_ws with what you like</div><div class="line">$ export ROS_WORKSPACE=~/ros_ws</div><div class="line">$ mkdir $ROS_WORKSPACE &amp;&amp; cd $ROS_WORKSPACE</div><div class="line">$ wstool init src</div><div class="line">$ catkin init</div><div class="line"># Store your ros version in a env variable ROS_ROOT_PATH</div><div class="line"># example: /opt/ros/kinetic or /opt/ros/melodic</div><div class="line">$ export ROS_ROOT_PATH=/opt/ros/kinetic</div><div class="line">$ catkin config --extend $ROS_ROOT_PATH</div></div><!-- fragment --> <h2>Downloading the WeCook stack from github</h2>
 <p><b>In the same termial, type in following commands</b> </p><div class="fragment"><div class="line">$ cd ROS_WORKSPACE/src</div><div class="line">$ git clone https://github.com/icaros-usc/wecook.git</div><div class="line">$ wstool merge wecook/wecook.rosinstall</div><div class="line">$ wstool up</div></div><!-- fragment --> <h2>Building the workspace</h2>
 <p><b>In the same terminal, type in following commands</b> </p><div class="fragment"><div class="line">$ cd $ROS_WORKSPACE</div><div class="line">$ catkin build</div></div><!-- fragment --> <h2>Run demo</h2>
-<p><b>Now you are ready to run all <a href="../README.md#demo">demos</a>!</b> </p>
+<p><b>Now you are ready to run all <a href="../README.md#usage">demos</a>!</b> </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
